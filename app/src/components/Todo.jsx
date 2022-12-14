@@ -39,7 +39,7 @@ export const Todo = () => {
         console.log(todo);
       })
       .catch((err) => {
-        console.log(err);
+        console.log("err",err);
       });
   };
 
@@ -62,8 +62,9 @@ export const Todo = () => {
           onChange={(e) => setData(e.target.value)}
         />
         <button className={styles.btn} onClick={add}>
-          Add Task
+          Add Task ⤵
         </button>
+
       </div>
 
       <div className={styles.table}>
@@ -71,7 +72,7 @@ export const Todo = () => {
           return (
             <div key={index}>
               <p className={styles.todotext}> 🎯 {e.task}</p>
-              <button onClick={() => deltetodo(e.id)} className={styles.deltebtn}>
+              <button onClick={() => deltetodo(e._id)} className={styles.deltebtn}>
                 {" "}
                 Delete ❌
               </button>
