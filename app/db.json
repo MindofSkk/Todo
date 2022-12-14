@@ -1,40 +1,24 @@
 {
   "todo": [
     {
-      "id": 1,
-      "task": "Make-Briyani"
+      "task": "heelo world",
+      "id": 1
     },
     {
-      "task": "called",
-      "id": 2
-    },
-    {
-      "task": "heelo",
+      "task": "hgg",
       "id": 3
     },
     {
-      "task": "s",
+      "task": "hello Word",
       "id": 4
     },
     {
-      "task": "s",
+      "task": "jhhfhg",
       "id": 5
     },
     {
-      "task": "s",
+      "task": "ggg",
       "id": 6
-    },
-    {
-      "task": "ssss",
-      "id": 7
-    },
-    {
-      "task": "ss",
-      "id": 8
-    },
-    {
-      "task": "njkbnjkl",
-      "id": 9
     }
   ]
 }

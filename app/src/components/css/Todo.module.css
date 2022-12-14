@@ -25,3 +25,43 @@
   margin-left: 2px;
   border-radius: 5px;
 }
+
+
+
+.table > div {
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #6c9ea8;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.table > div:hover{
+
+background-color: #a2d6e0;
+}
+.deltebtn{
+  
+
+  background-color: black;
+  color: white;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.deltebtn:hover{
+  color: white;
+  font-size: 22px;
+  background-color: red;
+}
+.todotext{
+  font-size: 18px;
+  font-weight:bold ;
+  
+}
