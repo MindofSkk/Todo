@@ -35,7 +35,8 @@ export const Todo = () => {
       .get("http://localhost:8080/todo")
       .then((res) => {
         // console.log("res",res.data);
-        setTodo(res.data);
+        let a=res.data.reverse()
+        setTodo(a);
         console.log(todo);
       })
       .catch((err) => {
@@ -55,7 +56,7 @@ export const Todo = () => {
   return (
     <div>
       <div className={styles.FirstBox}>
-        <h1>Todo</h1>
+        <h1> Full Stack : Todo</h1>
         <input
           type="text"
           placeholder="Enter The Task"

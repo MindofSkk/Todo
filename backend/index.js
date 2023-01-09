@@ -39,7 +39,7 @@ const dbconnect = () => {
 app.listen(8080, () => {
   dbconnect();
   try {
-    console.log("Serve start");
+    console.log("Server start");
   } catch (err) {
     console.log(err);
   }
