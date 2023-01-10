@@ -35,12 +35,12 @@ export const Todo = () => {
       .get("http://localhost:8080/todo")
       .then((res) => {
         // console.log("res",res.data);
-        let a=res.data.reverse()
+        let a = res.data.reverse();
         setTodo(a);
         console.log(todo);
       })
       .catch((err) => {
-        console.log("err",err);
+        console.log("err", err);
       });
   };
 
@@ -48,7 +48,7 @@ export const Todo = () => {
     axios
       .delete(`http://localhost:8080/todo/${id}`)
       .then((res) => {
-        getdata()
+        getdata();
       })
       .catch((err) => console.log(err));
   };
@@ -57,15 +57,24 @@ export const Todo = () => {
     <div>
       <div className={styles.FirstBox}>
         <h1> Full Stack : Todo</h1>
-        <input
+        <textarea
+          onChange={(e) => setData(e.target.value)}
+          placeholder="Enter The Task"
+          name=""
+          id=""
+          cols="50"
+          rows="3"
+        />
+        {/* <input
           type="text"
           placeholder="Enter The Task"
           onChange={(e) => setData(e.target.value)}
-        />
+        />  */}
+        <br />
+        <br />
         <button className={styles.btn} onClick={add}>
-          Add Task ⤵
+          Add Task
         </button>
-
       </div>
 
       <div className={styles.table}>
@@ -73,7 +82,10 @@ export const Todo = () => {
           return (
             <div key={index}>
               <p className={styles.todotext}> 🎯 {e.task}</p>
-              <button onClick={() => deltetodo(e._id)} className={styles.deltebtn}>
+              <button
+                onClick={() => deltetodo(e._id)}
+                className={styles.deltebtn}
+              >
                 {" "}
                 Delete ❌
               </button>
